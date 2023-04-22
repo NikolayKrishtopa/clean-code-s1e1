@@ -28,8 +28,11 @@ input {
 .button:hover {
   color: #3a3a3a;
 }
+.section{
+  width: 100%;
+}
 
-.section-heading {
+.section__heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -61,13 +64,13 @@ input {
   width: 318px;
 }
 
-.delete-icon {
+.list__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-icon:hover {
+.list__delete-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -78,11 +81,11 @@ input {
   text-align: right;
 }
 
-.header-img{
+.header__img{
   width: 100%;
 }
 
-.header .more-info {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -104,11 +107,12 @@ input {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-form {
   display: flex;
+  margin-bottom: 16px;
 }
 
-.list-item {
+.list__item {
   list-style: none;
   overflow: hidden;
   padding: 20px 0;
@@ -118,40 +122,40 @@ input {
   align-items: center;
 }
 
-.list-item {
+.list__item {
   vertical-align: middle;
 }
 
-.list-item > .checkbox {
+.list__item > .checkbox {
   margin: 0 10px;
 }
 
-.list-item > .item-text {
+.list__item > .list__item-text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .text-input {
+.list__item > .text-input {
   width: 226px;
 }
 
-#completed-tasks .item-text {
+#completed-tasks .list__item-text {
   text-decoration: line-through;
   color: #888;
 }
 
-.list-item .text-input {
+.list__item .text-input {
   display: none;
 }
 
-.list .list-item.edit-mode > .text-input {
+.list .list__item.edit-mode > .text-input {
   display: inline-block;
   width: 224px;
 }
 
-.list-item.edit-mode .item-text {
+.list__item.edit-mode .list__item-text {
   display: none;
 }
 
