@@ -28,7 +28,7 @@ input {
 .button:hover {
   color: #3a3a3a;
 }
-.section{
+.section {
   width: 100%;
 }
 
@@ -40,7 +40,11 @@ input {
   padding: 30px 0 10px;
   text-transform: uppercase;
   display: block;
-  margin: 0 0 20px;
+  margin: 0;
+}
+
+.section__heading_style_spaced {
+  margin: 16px 0 20px;
 }
 
 .text-input {
@@ -81,7 +85,7 @@ input {
   text-align: right;
 }
 
-.header__img{
+.header__img {
   width: 100%;
 }
 
@@ -131,6 +135,7 @@ input {
 }
 
 .list__item > .list__item-text {
+  margin: 0;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -158,6 +163,3 @@ input {
 .list__item.edit-mode .list__item-text {
   display: none;
 }
-
-
-
