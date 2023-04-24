@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"  MEDIA="screen" charset="utf-8">
-</head>
-<body class="page">
-  <header class="header">
-    <img class="header__img" alt="the mattrix of the dependency tasks 
-        on their urgency and importancy (Eisenhover matrix)." 
-        src="./eisenhower-matrix.jpg">
-    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
+  <head>
+    <title>Todo App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img
+        class="header__img"
+        alt="the mattrix of the dependency tasks 
+        on their urgency and importancy (Eisenhover matrix)."
+        src="./eisenhower-matrix.jpg"
+      />
+      <a
+        class="header__link"
+        href="https://goal-life.com/page/method/matrix-eisenhower"
+      >
         Want more details?
-    </a>
-  </header>
-  <main class="main">
-    <section id="add-item" class="section">
-      <h3 class="section__heading">Add Item</h3>
-      <form class="add-form">
-        <input id="new-task" class="task text-input" type="text">
-        <button class="button add-btn">Add</button>
-      </form>
-    </section>
-    <section id="todo" class="section">
-      <h3 class="section__heading">Todo</h3>
-      <ul class="list" id="incomplete-tasks">
-        <li class="list__item">
-          <input class="checkbox" type="checkbox">
-          <p class="task list__item-text">Pay Bills</p>
-          <input class="task text-input" type="text" class="task">
-          <button class="button list__edit-btn">Edit</button>
-          <button class="button list__delete-btn">
-            <img class="list__delete-icon" alt="delete item button: tag with cross." src="./remove.svg">
-          </button>
-        </li>
-        <li class="edit-mode list__item">
-          <input class="checkbox" type="checkbox">
-          <p class="task list__item-text">Go Shopping</p>
-          <input class="task text-input" type="text" value="Go Shopping" class="task">
-          <button class="button list__edit-btn">Save</button>
-          <button class="button list__delete-btn">
-            <img class="list__delete-icon" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </section>
-    <section class="done" class="section">
-      <h3 class="section__heading">Completed</h3>
-      <ul class="list" id="completed-tasks">
-        <li class="list__item">
-          <input class="checkbox" type="checkbox" checked>
-          <p class="task list__item-text">See the Doctor</p>
-          <input class="task text-input" type="text" class="task">
-          <button class="button list__edit-btn">Edit</button>
-          <button class="button list__delete-btn">
-            <img class="list__delete-icon" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </section>
-  </main>
-<script SRC="app.js"></script>
-</body>
+      </a>
+    </header>
+    <main class="main">
+      <section id="add-item" class="section">
+        <h2 class="section__heading">Add Item</h2>
+        <form class="add-form">
+          <input id="new-task" class="task text-input" type="text" />
+          <button class="button add-btn">Add</button>
+        </form>
+      </section>
+      <section id="todo" class="section">
+        <h2 class="section__heading">Todo</h2>
+        <ul class="list" id="incomplete-tasks">
+          <li class="list__item">
+            <input class="checkbox" type="checkbox" />
+            <p class="task list__item-text">Pay Bills</p>
+            <input class="task text-input" type="text" class="task" />
+            <button class="button list__edit-btn">Edit</button>
+            <button class="button list__delete-btn">
+              <img
+                class="list__delete-icon"
+                alt="delete item button: tag with cross."
+                src="./remove.svg"
+              />
+            </button>
+          </li>
+          <li class="edit-mode list__item">
+            <input class="checkbox" type="checkbox" />
+            <p class="task list__item-text">Go Shopping</p>
+            <input
+              class="task text-input"
+              type="text"
+              value="Go Shopping"
+              class="task"
+            />
+            <button class="button list__edit-btn">Save</button>
+            <button class="button list__delete-btn">
+              <img class="list__delete-icon" src="./remove.svg" />
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="done" class="section">
+        <h2 class="section__heading">Completed</h2>
+        <ul class="list" id="completed-tasks">
+          <li class="list__item">
+            <input class="checkbox" type="checkbox" checked />
+            <p class="task list__item-text">See the Doctor</p>
+            <input class="task text-input" type="text" class="task" />
+            <button class="button list__edit-btn">Edit</button>
+            <button class="button list__delete-btn">
+              <img class="list__delete-icon" src="./remove.svg" />
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
