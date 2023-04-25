@@ -8,14 +8,14 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById('new-task'); //Add a new task.
-var addButton = document.querySelector('.add-btn'); 
+var addButton = document.querySelector('.add-btn');
 var incompleteTaskHolder = document.getElementById('incomplete-tasks'); //ul of #incomplete-tasks
 var completedTasksHolder = document.getElementById('completed-tasks'); //completed-tasks
 
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement('li');
-  listItem.classList.add('list__item')
+  listItem.classList.add('list__item');
 
   //input (checkbox)
   var checkBox = document.createElement('input'); //checkbx
@@ -29,7 +29,7 @@ var createNewTaskElement = function (taskString) {
   //button.delete
   var deleteButton = document.createElement('button'); //delete button
   var deleteButtonImg = document.createElement('img'); //delete button image
-  deleteButtonImg.classList.add('list__delete-icon')
+  deleteButtonImg.classList.add('list__delete-icon');
 
   label.innerText = taskString;
   label.className = 'list__item-text task';
@@ -45,6 +45,7 @@ var createNewTaskElement = function (taskString) {
 
   deleteButton.className = 'list__delete-btn button';
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.alt = 'delete item button: tag with cross.';
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -134,8 +135,8 @@ var ajaxRequest = function () {
 
 //Set the click handler to the addTask function.
 addButton.onclick = addTask;
-addButton.addEventListener('click', e=>{
-  e.preventDefault()
+addButton.addEventListener('click', (e) => {
+  e.preventDefault();
   addTask;
 });
 addButton.addEventListener('click', ajaxRequest);
